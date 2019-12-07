@@ -54,23 +54,23 @@
             this.magentaColor1 = new System.Windows.Forms.Button();
             this.indigoColor2 = new System.Windows.Forms.Button();
             this.indigoColor1 = new System.Windows.Forms.Button();
-            this.ResetBlue1 = new System.Windows.Forms.Button();
+            this.resetBlue1 = new System.Windows.Forms.Button();
             this.resetToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.ResetBlue2 = new System.Windows.Forms.Button();
-            this.ResetGreen2 = new System.Windows.Forms.Button();
-            this.ResetGreen1 = new System.Windows.Forms.Button();
-            this.ResetPurple2 = new System.Windows.Forms.Button();
-            this.ResetPurple1 = new System.Windows.Forms.Button();
-            this.ResetYellow2 = new System.Windows.Forms.Button();
-            this.ResetYellow1 = new System.Windows.Forms.Button();
-            this.ResetCyan2 = new System.Windows.Forms.Button();
-            this.ResetCyan1 = new System.Windows.Forms.Button();
-            this.ResetMagenta2 = new System.Windows.Forms.Button();
-            this.ResetMagenta1 = new System.Windows.Forms.Button();
-            this.ResetIndigo2 = new System.Windows.Forms.Button();
-            this.ResetIndigo1 = new System.Windows.Forms.Button();
-            this.ResetOrange2 = new System.Windows.Forms.Button();
-            this.ResetOrange1 = new System.Windows.Forms.Button();
+            this.resetBlue2 = new System.Windows.Forms.Button();
+            this.resetGreen2 = new System.Windows.Forms.Button();
+            this.resetGreen1 = new System.Windows.Forms.Button();
+            this.resetPurple2 = new System.Windows.Forms.Button();
+            this.resetPurple1 = new System.Windows.Forms.Button();
+            this.resetYellow2 = new System.Windows.Forms.Button();
+            this.resetYellow1 = new System.Windows.Forms.Button();
+            this.resetCyan2 = new System.Windows.Forms.Button();
+            this.resetCyan1 = new System.Windows.Forms.Button();
+            this.resetMagenta2 = new System.Windows.Forms.Button();
+            this.resetMagenta1 = new System.Windows.Forms.Button();
+            this.resetIndigo2 = new System.Windows.Forms.Button();
+            this.resetIndigo1 = new System.Windows.Forms.Button();
+            this.resetOrange2 = new System.Windows.Forms.Button();
+            this.resetOrange1 = new System.Windows.Forms.Button();
             this.ResetAll = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Import = new System.Windows.Forms.Button();
@@ -119,7 +119,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Blue";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -129,7 +128,6 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Green";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -175,7 +173,6 @@
             this.label15.TabIndex = 25;
             this.label15.Text = "Indigo";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // colorpicker
             // 
@@ -190,7 +187,7 @@
             this.blueColor1.Size = new System.Drawing.Size(64, 64);
             this.blueColor1.TabIndex = 28;
             this.blueColor1.UseVisualStyleBackColor = true;
-            this.blueColor1.Click += new System.EventHandler(this.Blue1color_Click);
+            this.blueColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // blueColor2
             // 
@@ -199,7 +196,7 @@
             this.blueColor2.Size = new System.Drawing.Size(64, 64);
             this.blueColor2.TabIndex = 29;
             this.blueColor2.UseVisualStyleBackColor = true;
-            this.blueColor2.Click += new System.EventHandler(this.Blue2color_Click);
+            this.blueColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // label1
             // 
@@ -212,7 +209,6 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.resetToolTip1.SetToolTip(this.label1, "Set the lightsaber blade\'s main color.\r\n\r\nMostly affects the blade itself. Bright" +
         "er colors will look thicker, darker colors will look thinner.");
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label3
             // 
@@ -225,7 +221,6 @@
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.resetToolTip1.SetToolTip(this.label3, "Set the lightsaber blade\'s glow color.\r\n\r\nMostly affects the outer glow and the c" +
         "olor of the light cast on the surroundings.");
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // greenColor2
             // 
@@ -234,7 +229,7 @@
             this.greenColor2.Size = new System.Drawing.Size(64, 64);
             this.greenColor2.TabIndex = 33;
             this.greenColor2.UseVisualStyleBackColor = true;
-            this.greenColor2.Click += new System.EventHandler(this.greenColor2_Click);
+            this.greenColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // greenColor1
             // 
@@ -244,7 +239,7 @@
             this.greenColor1.Size = new System.Drawing.Size(64, 64);
             this.greenColor1.TabIndex = 32;
             this.greenColor1.UseVisualStyleBackColor = true;
-            this.greenColor1.Click += new System.EventHandler(this.button2_Click);
+            this.greenColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // purpleColor2
             // 
@@ -253,7 +248,7 @@
             this.purpleColor2.Size = new System.Drawing.Size(64, 64);
             this.purpleColor2.TabIndex = 35;
             this.purpleColor2.UseVisualStyleBackColor = true;
-            this.purpleColor2.Click += new System.EventHandler(this.purpleColor2_Click);
+            this.purpleColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // purpleColor1
             // 
@@ -263,7 +258,7 @@
             this.purpleColor1.Size = new System.Drawing.Size(64, 64);
             this.purpleColor1.TabIndex = 34;
             this.purpleColor1.UseVisualStyleBackColor = true;
-            this.purpleColor1.Click += new System.EventHandler(this.purpleColor1_Click);
+            this.purpleColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // yellowColor2
             // 
@@ -272,7 +267,7 @@
             this.yellowColor2.Size = new System.Drawing.Size(64, 64);
             this.yellowColor2.TabIndex = 37;
             this.yellowColor2.UseVisualStyleBackColor = true;
-            this.yellowColor2.Click += new System.EventHandler(this.yellowColor2_Click);
+            this.yellowColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // yellowColor1
             // 
@@ -282,7 +277,7 @@
             this.yellowColor1.Size = new System.Drawing.Size(64, 64);
             this.yellowColor1.TabIndex = 36;
             this.yellowColor1.UseVisualStyleBackColor = true;
-            this.yellowColor1.Click += new System.EventHandler(this.yellowColor1_Click);
+            this.yellowColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // cyanColor2
             // 
@@ -291,7 +286,7 @@
             this.cyanColor2.Size = new System.Drawing.Size(64, 64);
             this.cyanColor2.TabIndex = 39;
             this.cyanColor2.UseVisualStyleBackColor = true;
-            this.cyanColor2.Click += new System.EventHandler(this.cyanColor2_Click);
+            this.cyanColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // cyanColor1
             // 
@@ -301,7 +296,7 @@
             this.cyanColor1.Size = new System.Drawing.Size(64, 64);
             this.cyanColor1.TabIndex = 38;
             this.cyanColor1.UseVisualStyleBackColor = true;
-            this.cyanColor1.Click += new System.EventHandler(this.cyanColor1_Click);
+            this.cyanColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // magentaColor2
             // 
@@ -310,7 +305,7 @@
             this.magentaColor2.Size = new System.Drawing.Size(64, 64);
             this.magentaColor2.TabIndex = 41;
             this.magentaColor2.UseVisualStyleBackColor = true;
-            this.magentaColor2.Click += new System.EventHandler(this.magentaColor2_Click);
+            this.magentaColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // magentaColor1
             // 
@@ -320,7 +315,7 @@
             this.magentaColor1.Size = new System.Drawing.Size(64, 64);
             this.magentaColor1.TabIndex = 40;
             this.magentaColor1.UseVisualStyleBackColor = true;
-            this.magentaColor1.Click += new System.EventHandler(this.magentaColor1_Click);
+            this.magentaColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // indigoColor2
             // 
@@ -329,7 +324,7 @@
             this.indigoColor2.Size = new System.Drawing.Size(64, 64);
             this.indigoColor2.TabIndex = 43;
             this.indigoColor2.UseVisualStyleBackColor = true;
-            this.indigoColor2.Click += new System.EventHandler(this.indigoColor2_Click);
+            this.indigoColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // indigoColor1
             // 
@@ -339,22 +334,22 @@
             this.indigoColor1.Size = new System.Drawing.Size(64, 64);
             this.indigoColor1.TabIndex = 42;
             this.indigoColor1.UseVisualStyleBackColor = true;
-            this.indigoColor1.Click += new System.EventHandler(this.indigoColor1_Click);
+            this.indigoColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // ResetBlue1
             // 
-            this.ResetBlue1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetBlue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetBlue1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetBlue1.Location = new System.Drawing.Point(157, 116);
-            this.ResetBlue1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetBlue1.Name = "ResetBlue1";
-            this.ResetBlue1.Size = new System.Drawing.Size(20, 20);
-            this.ResetBlue1.TabIndex = 44;
-            this.ResetBlue1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetBlue1, "Reset color to default");
-            this.ResetBlue1.UseVisualStyleBackColor = false;
-            this.ResetBlue1.Click += new System.EventHandler(this.button13_Click);
+            this.resetBlue1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetBlue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetBlue1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetBlue1.Location = new System.Drawing.Point(157, 116);
+            this.resetBlue1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetBlue1.Name = "ResetBlue1";
+            this.resetBlue1.Size = new System.Drawing.Size(20, 20);
+            this.resetBlue1.TabIndex = 44;
+            this.resetBlue1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetBlue1, "Reset color to default");
+            this.resetBlue1.UseVisualStyleBackColor = false;
+            this.resetBlue1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // resetToolTip1
             // 
@@ -365,228 +360,228 @@
             // 
             // ResetBlue2
             // 
-            this.ResetBlue2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetBlue2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetBlue2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetBlue2.Location = new System.Drawing.Point(157, 186);
-            this.ResetBlue2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetBlue2.Name = "ResetBlue2";
-            this.ResetBlue2.Size = new System.Drawing.Size(20, 20);
-            this.ResetBlue2.TabIndex = 46;
-            this.ResetBlue2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetBlue2, "Reset color to default");
-            this.ResetBlue2.UseVisualStyleBackColor = false;
-            this.ResetBlue2.Click += new System.EventHandler(this.ResetBlue2_Click);
+            this.resetBlue2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetBlue2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetBlue2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetBlue2.Location = new System.Drawing.Point(157, 186);
+            this.resetBlue2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetBlue2.Name = "ResetBlue2";
+            this.resetBlue2.Size = new System.Drawing.Size(20, 20);
+            this.resetBlue2.TabIndex = 46;
+            this.resetBlue2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetBlue2, "Reset color to default");
+            this.resetBlue2.UseVisualStyleBackColor = false;
+            this.resetBlue2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetGreen2
             // 
-            this.ResetGreen2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetGreen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetGreen2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetGreen2.Location = new System.Drawing.Point(227, 186);
-            this.ResetGreen2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetGreen2.Name = "ResetGreen2";
-            this.ResetGreen2.Size = new System.Drawing.Size(20, 20);
-            this.ResetGreen2.TabIndex = 48;
-            this.ResetGreen2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetGreen2, "Reset color to default");
-            this.ResetGreen2.UseVisualStyleBackColor = false;
-            this.ResetGreen2.Click += new System.EventHandler(this.ResetGreen2_Click);
+            this.resetGreen2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetGreen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetGreen2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetGreen2.Location = new System.Drawing.Point(227, 186);
+            this.resetGreen2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetGreen2.Name = "ResetGreen2";
+            this.resetGreen2.Size = new System.Drawing.Size(20, 20);
+            this.resetGreen2.TabIndex = 48;
+            this.resetGreen2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetGreen2, "Reset color to default");
+            this.resetGreen2.UseVisualStyleBackColor = false;
+            this.resetGreen2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetGreen1
             // 
-            this.ResetGreen1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetGreen1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetGreen1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetGreen1.Location = new System.Drawing.Point(227, 116);
-            this.ResetGreen1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetGreen1.Name = "ResetGreen1";
-            this.ResetGreen1.Size = new System.Drawing.Size(20, 20);
-            this.ResetGreen1.TabIndex = 47;
-            this.ResetGreen1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetGreen1, "Reset color to default");
-            this.ResetGreen1.UseVisualStyleBackColor = false;
-            this.ResetGreen1.Click += new System.EventHandler(this.button2_Click_1);
+            this.resetGreen1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetGreen1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetGreen1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetGreen1.Location = new System.Drawing.Point(227, 116);
+            this.resetGreen1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetGreen1.Name = "ResetGreen1";
+            this.resetGreen1.Size = new System.Drawing.Size(20, 20);
+            this.resetGreen1.TabIndex = 47;
+            this.resetGreen1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetGreen1, "Reset color to default");
+            this.resetGreen1.UseVisualStyleBackColor = false;
+            this.resetGreen1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetPurple2
             // 
-            this.ResetPurple2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetPurple2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetPurple2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetPurple2.Location = new System.Drawing.Point(367, 186);
-            this.ResetPurple2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetPurple2.Name = "ResetPurple2";
-            this.ResetPurple2.Size = new System.Drawing.Size(20, 20);
-            this.ResetPurple2.TabIndex = 50;
-            this.ResetPurple2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetPurple2, "Reset color to default");
-            this.ResetPurple2.UseVisualStyleBackColor = false;
-            this.ResetPurple2.Click += new System.EventHandler(this.ResetPurple2_Click);
+            this.resetPurple2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetPurple2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetPurple2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetPurple2.Location = new System.Drawing.Point(367, 186);
+            this.resetPurple2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetPurple2.Name = "ResetPurple2";
+            this.resetPurple2.Size = new System.Drawing.Size(20, 20);
+            this.resetPurple2.TabIndex = 50;
+            this.resetPurple2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetPurple2, "Reset color to default");
+            this.resetPurple2.UseVisualStyleBackColor = false;
+            this.resetPurple2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetPurple1
             // 
-            this.ResetPurple1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetPurple1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetPurple1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetPurple1.Location = new System.Drawing.Point(367, 116);
-            this.ResetPurple1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetPurple1.Name = "ResetPurple1";
-            this.ResetPurple1.Size = new System.Drawing.Size(20, 20);
-            this.ResetPurple1.TabIndex = 49;
-            this.ResetPurple1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetPurple1, "Reset color to default");
-            this.ResetPurple1.UseVisualStyleBackColor = false;
-            this.ResetPurple1.Click += new System.EventHandler(this.ResetPurple1_Click);
+            this.resetPurple1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetPurple1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetPurple1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetPurple1.Location = new System.Drawing.Point(367, 116);
+            this.resetPurple1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetPurple1.Name = "ResetPurple1";
+            this.resetPurple1.Size = new System.Drawing.Size(20, 20);
+            this.resetPurple1.TabIndex = 49;
+            this.resetPurple1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetPurple1, "Reset color to default");
+            this.resetPurple1.UseVisualStyleBackColor = false;
+            this.resetPurple1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetYellow2
             // 
-            this.ResetYellow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetYellow2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetYellow2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetYellow2.Location = new System.Drawing.Point(437, 186);
-            this.ResetYellow2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetYellow2.Name = "ResetYellow2";
-            this.ResetYellow2.Size = new System.Drawing.Size(20, 20);
-            this.ResetYellow2.TabIndex = 52;
-            this.ResetYellow2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetYellow2, "Reset color to default");
-            this.ResetYellow2.UseVisualStyleBackColor = false;
-            this.ResetYellow2.Click += new System.EventHandler(this.ResetYellow2_Click);
+            this.resetYellow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetYellow2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetYellow2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetYellow2.Location = new System.Drawing.Point(437, 186);
+            this.resetYellow2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetYellow2.Name = "ResetYellow2";
+            this.resetYellow2.Size = new System.Drawing.Size(20, 20);
+            this.resetYellow2.TabIndex = 52;
+            this.resetYellow2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetYellow2, "Reset color to default");
+            this.resetYellow2.UseVisualStyleBackColor = false;
+            this.resetYellow2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetYellow1
             // 
-            this.ResetYellow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetYellow1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetYellow1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetYellow1.Location = new System.Drawing.Point(437, 116);
-            this.ResetYellow1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetYellow1.Name = "ResetYellow1";
-            this.ResetYellow1.Size = new System.Drawing.Size(20, 20);
-            this.ResetYellow1.TabIndex = 51;
-            this.ResetYellow1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetYellow1, "Reset color to default");
-            this.ResetYellow1.UseVisualStyleBackColor = false;
-            this.ResetYellow1.Click += new System.EventHandler(this.ResetYellow1_Click);
+            this.resetYellow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetYellow1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetYellow1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetYellow1.Location = new System.Drawing.Point(437, 116);
+            this.resetYellow1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetYellow1.Name = "ResetYellow1";
+            this.resetYellow1.Size = new System.Drawing.Size(20, 20);
+            this.resetYellow1.TabIndex = 51;
+            this.resetYellow1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetYellow1, "Reset color to default");
+            this.resetYellow1.UseVisualStyleBackColor = false;
+            this.resetYellow1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetCyan2
             // 
-            this.ResetCyan2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetCyan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetCyan2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetCyan2.Location = new System.Drawing.Point(507, 186);
-            this.ResetCyan2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetCyan2.Name = "ResetCyan2";
-            this.ResetCyan2.Size = new System.Drawing.Size(20, 20);
-            this.ResetCyan2.TabIndex = 54;
-            this.ResetCyan2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetCyan2, "Reset color to default");
-            this.ResetCyan2.UseVisualStyleBackColor = false;
-            this.ResetCyan2.Click += new System.EventHandler(this.ResetCyan2_Click);
+            this.resetCyan2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetCyan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetCyan2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetCyan2.Location = new System.Drawing.Point(507, 186);
+            this.resetCyan2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetCyan2.Name = "ResetCyan2";
+            this.resetCyan2.Size = new System.Drawing.Size(20, 20);
+            this.resetCyan2.TabIndex = 54;
+            this.resetCyan2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetCyan2, "Reset color to default");
+            this.resetCyan2.UseVisualStyleBackColor = false;
+            this.resetCyan2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetCyan1
             // 
-            this.ResetCyan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetCyan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetCyan1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetCyan1.Location = new System.Drawing.Point(507, 116);
-            this.ResetCyan1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetCyan1.Name = "ResetCyan1";
-            this.ResetCyan1.Size = new System.Drawing.Size(20, 20);
-            this.ResetCyan1.TabIndex = 53;
-            this.ResetCyan1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetCyan1, "Reset color to default");
-            this.ResetCyan1.UseVisualStyleBackColor = false;
-            this.ResetCyan1.Click += new System.EventHandler(this.ResetCyan1_Click);
+            this.resetCyan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetCyan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetCyan1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetCyan1.Location = new System.Drawing.Point(507, 116);
+            this.resetCyan1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetCyan1.Name = "ResetCyan1";
+            this.resetCyan1.Size = new System.Drawing.Size(20, 20);
+            this.resetCyan1.TabIndex = 53;
+            this.resetCyan1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetCyan1, "Reset color to default");
+            this.resetCyan1.UseVisualStyleBackColor = false;
+            this.resetCyan1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetMagenta2
             // 
-            this.ResetMagenta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetMagenta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetMagenta2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetMagenta2.Location = new System.Drawing.Point(577, 186);
-            this.ResetMagenta2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetMagenta2.Name = "ResetMagenta2";
-            this.ResetMagenta2.Size = new System.Drawing.Size(20, 20);
-            this.ResetMagenta2.TabIndex = 56;
-            this.ResetMagenta2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetMagenta2, "Reset color to default");
-            this.ResetMagenta2.UseVisualStyleBackColor = false;
-            this.ResetMagenta2.Click += new System.EventHandler(this.ResetMagenta2_Click);
+            this.resetMagenta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetMagenta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetMagenta2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetMagenta2.Location = new System.Drawing.Point(577, 186);
+            this.resetMagenta2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetMagenta2.Name = "ResetMagenta2";
+            this.resetMagenta2.Size = new System.Drawing.Size(20, 20);
+            this.resetMagenta2.TabIndex = 56;
+            this.resetMagenta2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetMagenta2, "Reset color to default");
+            this.resetMagenta2.UseVisualStyleBackColor = false;
+            this.resetMagenta2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetMagenta1
             // 
-            this.ResetMagenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetMagenta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetMagenta1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetMagenta1.Location = new System.Drawing.Point(577, 116);
-            this.ResetMagenta1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetMagenta1.Name = "ResetMagenta1";
-            this.ResetMagenta1.Size = new System.Drawing.Size(20, 20);
-            this.ResetMagenta1.TabIndex = 55;
-            this.ResetMagenta1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetMagenta1, "Reset color to default");
-            this.ResetMagenta1.UseVisualStyleBackColor = false;
-            this.ResetMagenta1.Click += new System.EventHandler(this.ResetMagenta1_Click);
+            this.resetMagenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetMagenta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetMagenta1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetMagenta1.Location = new System.Drawing.Point(577, 116);
+            this.resetMagenta1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetMagenta1.Name = "ResetMagenta1";
+            this.resetMagenta1.Size = new System.Drawing.Size(20, 20);
+            this.resetMagenta1.TabIndex = 55;
+            this.resetMagenta1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetMagenta1, "Reset color to default");
+            this.resetMagenta1.UseVisualStyleBackColor = false;
+            this.resetMagenta1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetIndigo2
             // 
-            this.ResetIndigo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetIndigo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetIndigo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetIndigo2.Location = new System.Drawing.Point(647, 186);
-            this.ResetIndigo2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetIndigo2.Name = "ResetIndigo2";
-            this.ResetIndigo2.Size = new System.Drawing.Size(20, 20);
-            this.ResetIndigo2.TabIndex = 58;
-            this.ResetIndigo2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetIndigo2, "Reset color to default");
-            this.ResetIndigo2.UseVisualStyleBackColor = false;
-            this.ResetIndigo2.Click += new System.EventHandler(this.ResetIndigo2_Click);
+            this.resetIndigo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetIndigo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetIndigo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetIndigo2.Location = new System.Drawing.Point(647, 186);
+            this.resetIndigo2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetIndigo2.Name = "ResetIndigo2";
+            this.resetIndigo2.Size = new System.Drawing.Size(20, 20);
+            this.resetIndigo2.TabIndex = 58;
+            this.resetIndigo2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetIndigo2, "Reset color to default");
+            this.resetIndigo2.UseVisualStyleBackColor = false;
+            this.resetIndigo2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetIndigo1
             // 
-            this.ResetIndigo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetIndigo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetIndigo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetIndigo1.Location = new System.Drawing.Point(647, 116);
-            this.ResetIndigo1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetIndigo1.Name = "ResetIndigo1";
-            this.ResetIndigo1.Size = new System.Drawing.Size(20, 20);
-            this.ResetIndigo1.TabIndex = 57;
-            this.ResetIndigo1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetIndigo1, "Reset color to default");
-            this.ResetIndigo1.UseVisualStyleBackColor = false;
-            this.ResetIndigo1.Click += new System.EventHandler(this.ResetIndigo1_Click);
+            this.resetIndigo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetIndigo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetIndigo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetIndigo1.Location = new System.Drawing.Point(647, 116);
+            this.resetIndigo1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetIndigo1.Name = "ResetIndigo1";
+            this.resetIndigo1.Size = new System.Drawing.Size(20, 20);
+            this.resetIndigo1.TabIndex = 57;
+            this.resetIndigo1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetIndigo1, "Reset color to default");
+            this.resetIndigo1.UseVisualStyleBackColor = false;
+            this.resetIndigo1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetOrange2
             // 
-            this.ResetOrange2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetOrange2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetOrange2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetOrange2.Location = new System.Drawing.Point(297, 186);
-            this.ResetOrange2.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetOrange2.Name = "ResetOrange2";
-            this.ResetOrange2.Size = new System.Drawing.Size(20, 20);
-            this.ResetOrange2.TabIndex = 64;
-            this.ResetOrange2.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetOrange2, "Reset color to default");
-            this.ResetOrange2.UseVisualStyleBackColor = false;
-            this.ResetOrange2.Click += new System.EventHandler(this.ResetOrange2_Click);
+            this.resetOrange2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetOrange2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetOrange2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetOrange2.Location = new System.Drawing.Point(297, 186);
+            this.resetOrange2.Margin = new System.Windows.Forms.Padding(0);
+            this.resetOrange2.Name = "ResetOrange2";
+            this.resetOrange2.Size = new System.Drawing.Size(20, 20);
+            this.resetOrange2.TabIndex = 64;
+            this.resetOrange2.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetOrange2, "Reset color to default");
+            this.resetOrange2.UseVisualStyleBackColor = false;
+            this.resetOrange2.Click += new System.EventHandler(this.ResetColorGlow_Click);
             // 
             // ResetOrange1
             // 
-            this.ResetOrange1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ResetOrange1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetOrange1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ResetOrange1.Location = new System.Drawing.Point(297, 116);
-            this.ResetOrange1.Margin = new System.Windows.Forms.Padding(0);
-            this.ResetOrange1.Name = "ResetOrange1";
-            this.ResetOrange1.Size = new System.Drawing.Size(20, 20);
-            this.ResetOrange1.TabIndex = 63;
-            this.ResetOrange1.Text = "X";
-            this.resetToolTip1.SetToolTip(this.ResetOrange1, "Reset color to default");
-            this.ResetOrange1.UseVisualStyleBackColor = false;
-            this.ResetOrange1.Click += new System.EventHandler(this.ResetOrange1_Click);
+            this.resetOrange1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetOrange1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetOrange1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.resetOrange1.Location = new System.Drawing.Point(297, 116);
+            this.resetOrange1.Margin = new System.Windows.Forms.Padding(0);
+            this.resetOrange1.Name = "ResetOrange1";
+            this.resetOrange1.Size = new System.Drawing.Size(20, 20);
+            this.resetOrange1.TabIndex = 63;
+            this.resetOrange1.Text = "X";
+            this.resetToolTip1.SetToolTip(this.resetOrange1, "Reset color to default");
+            this.resetOrange1.UseVisualStyleBackColor = false;
+            this.resetOrange1.Click += new System.EventHandler(this.ResetColorBlade_Click);
             // 
             // ResetAll
             // 
@@ -630,7 +625,7 @@
             this.orangeColor2.Size = new System.Drawing.Size(64, 64);
             this.orangeColor2.TabIndex = 62;
             this.orangeColor2.UseVisualStyleBackColor = true;
-            this.orangeColor2.Click += new System.EventHandler(this.orangeColor2_Click);
+            this.orangeColor2.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // orangeColor1
             // 
@@ -640,7 +635,7 @@
             this.orangeColor1.Size = new System.Drawing.Size(64, 64);
             this.orangeColor1.TabIndex = 61;
             this.orangeColor1.UseVisualStyleBackColor = true;
-            this.orangeColor1.Click += new System.EventHandler(this.orangeColor1_Click);
+            this.orangeColor1.Click += new System.EventHandler(this.EditColor_Color);
             // 
             // label7
             // 
@@ -671,7 +666,6 @@
             this.soundfontBlue.Name = "soundfontBlue";
             this.soundfontBlue.Size = new System.Drawing.Size(64, 21);
             this.soundfontBlue.TabIndex = 69;
-            this.soundfontBlue.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // soundfontGreen
             // 
@@ -895,27 +889,27 @@
             this.Controls.Add(this.InfoBox);
             this.Controls.Add(this.ExportToPakButton);
             this.Controls.Add(this.ResetAll);
-            this.Controls.Add(this.ResetOrange2);
-            this.Controls.Add(this.ResetOrange1);
+            this.Controls.Add(this.resetOrange2);
+            this.Controls.Add(this.resetOrange1);
             this.Controls.Add(this.orangeColor2);
             this.Controls.Add(this.orangeColor1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.ResetIndigo2);
-            this.Controls.Add(this.ResetIndigo1);
-            this.Controls.Add(this.ResetMagenta2);
-            this.Controls.Add(this.ResetMagenta1);
-            this.Controls.Add(this.ResetCyan2);
-            this.Controls.Add(this.ResetCyan1);
-            this.Controls.Add(this.ResetYellow2);
-            this.Controls.Add(this.ResetYellow1);
-            this.Controls.Add(this.ResetPurple2);
-            this.Controls.Add(this.ResetPurple1);
-            this.Controls.Add(this.ResetGreen2);
-            this.Controls.Add(this.ResetGreen1);
-            this.Controls.Add(this.ResetBlue2);
+            this.Controls.Add(this.resetIndigo2);
+            this.Controls.Add(this.resetIndigo1);
+            this.Controls.Add(this.resetMagenta2);
+            this.Controls.Add(this.resetMagenta1);
+            this.Controls.Add(this.resetCyan2);
+            this.Controls.Add(this.resetCyan1);
+            this.Controls.Add(this.resetYellow2);
+            this.Controls.Add(this.resetYellow1);
+            this.Controls.Add(this.resetPurple2);
+            this.Controls.Add(this.resetPurple1);
+            this.Controls.Add(this.resetGreen2);
+            this.Controls.Add(this.resetGreen1);
+            this.Controls.Add(this.resetBlue2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.ResetBlue1);
+            this.Controls.Add(this.resetBlue1);
             this.Controls.Add(this.indigoColor2);
             this.Controls.Add(this.indigoColor1);
             this.Controls.Add(this.magentaColor2);
@@ -954,6 +948,7 @@
             this.MinimumSize = new System.Drawing.Size(804, 512);
             this.Name = "Form1";
             this.Text = "Star Wars Jedi: Fallen Order Lightsaber Color Editor 1.1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.infoBD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -1001,24 +996,24 @@
         private System.Windows.Forms.Button magentaColor1;
         private System.Windows.Forms.Button indigoColor2;
         private System.Windows.Forms.Button indigoColor1;
-        private System.Windows.Forms.Button ResetBlue1;
+        private System.Windows.Forms.Button resetBlue1;
         private System.Windows.Forms.ToolTip resetToolTip1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button ResetBlue2;
-        private System.Windows.Forms.Button ResetGreen2;
-        private System.Windows.Forms.Button ResetGreen1;
-        private System.Windows.Forms.Button ResetPurple2;
-        private System.Windows.Forms.Button ResetPurple1;
-        private System.Windows.Forms.Button ResetYellow2;
-        private System.Windows.Forms.Button ResetYellow1;
-        private System.Windows.Forms.Button ResetCyan2;
-        private System.Windows.Forms.Button ResetCyan1;
-        private System.Windows.Forms.Button ResetMagenta2;
-        private System.Windows.Forms.Button ResetMagenta1;
-        private System.Windows.Forms.Button ResetIndigo2;
-        private System.Windows.Forms.Button ResetIndigo1;
-        private System.Windows.Forms.Button ResetOrange2;
-        private System.Windows.Forms.Button ResetOrange1;
+        private System.Windows.Forms.Button resetBlue2;
+        private System.Windows.Forms.Button resetGreen2;
+        private System.Windows.Forms.Button resetGreen1;
+        private System.Windows.Forms.Button resetPurple2;
+        private System.Windows.Forms.Button resetPurple1;
+        private System.Windows.Forms.Button resetYellow2;
+        private System.Windows.Forms.Button resetYellow1;
+        private System.Windows.Forms.Button resetCyan2;
+        private System.Windows.Forms.Button resetCyan1;
+        private System.Windows.Forms.Button resetMagenta2;
+        private System.Windows.Forms.Button resetMagenta1;
+        private System.Windows.Forms.Button resetIndigo2;
+        private System.Windows.Forms.Button resetIndigo1;
+        private System.Windows.Forms.Button resetOrange2;
+        private System.Windows.Forms.Button resetOrange1;
         private System.Windows.Forms.Button orangeColor2;
         private System.Windows.Forms.Button orangeColor1;
         private System.Windows.Forms.PictureBox pictureBox7;
