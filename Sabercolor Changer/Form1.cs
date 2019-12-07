@@ -88,7 +88,7 @@ namespace Sabercolor_Changer
 
                 saberList.ForEach(saber => saber.Save(pakFile));
 
-                if (File.Exists(folderName + "/pakchunk0-WindowsNoEditor.pak"))
+                if (!File.Exists(folderName + "/pakchunk0-WindowsNoEditor.pak"))
                     InfoBox.Text = "Pakchunk99_CustomSabercolors.pak exported to: " + folderName + Environment.NewLine + Environment.NewLine + "This does not look like your game's Paks folder." + Environment.NewLine + "You will need to manually copy Pakchunk99_CustomSabercolors.pak to your .../Jedi Fallen Order/SwGame/Content/Paks folder.";
                 else
                 {
